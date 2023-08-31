@@ -8,7 +8,6 @@ export const MemoExample = () => {
 	
 	//const doubleNumber = slowFunction(numberObj.input)
 
-
 	const doubleNumber = useMemo(() => { return slowFunction(numberObj.input) }, [numberObj.input])
 
 	return (
